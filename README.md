@@ -37,25 +37,13 @@ pnpm run dev
 │   │   └── SideBar.astro
 │   │   └── SideBarMenu.astro
 │   │   └── SideBarFooter.astro
-│   ├── content/
-│   │   ├── blog/
-│   │   │   ├── post1.md
-│   │   │   ├── post2.md
-│   │   │   └── post3.md
-│   │   ├── store/
-│   │   │   ├── item1.md
-│   │   │   ├── item2.md
 │   ├── layouts/
 │   │   └── BaseLayout.astro
-│   │   └── PostLayout.astro
 │   └── pages/
-│   │   ├── blog/
-│   │   │   ├── [...page].astro
-│   │   │   ├── [slug].astro
+│   │   └── 404.astro
 │   │   └── cv.astro
 │   │   └── index.astro
 │   │   └── projects.astro
-│   │   └── rss.xml.js
 │   ├── styles/
 │   │   └── global.css
 │   └── config.ts
@@ -126,27 +114,6 @@ URL" target="Optional link target (_blank default)" badge="Optional badge"
 tags={['Array','of','tags']} />
 ```
 
-#### HorizontalCard Shop Item
-
-
-This component is already included in the Store layout of the template. In case you want to use it in another place these are the props.
-
-```html
-<HorizontalShopItem
-  title="Item Title"
-  img="imge_url"
-  desc="Item description"
-  pricing="current_price"
-  oldPricing="old_price"
-  checkoutUrl="external store checkout url"
-  badge="Optional badge"
-  url="item details url"
-  custom_link="Custom link url"
-  custom_link_label="Cutom link btn label"
-  target="Optional link target (_self default)"
-/>
-```
-
 #### Adding a Custom Component
 
 To add a custom component, you can create a .astro file in the components folder under the source folder. 
@@ -178,10 +145,6 @@ You can add a [content collection](https://docs.astro.build/en/guides/content-co
 
 Where you need to define your content collections, we define our content schemas too.
 
-#### Blog
-
-Add your `md` blog post in the `/content/blog/` folder.
-
 ##### Post format
 
 Add code with this format in the top of each post file.
@@ -196,46 +159,6 @@ heroImage: "Post Hero Image URL"
 ```
 
 ### Pages
-
-#### Blog
-
-Blog uses Astro's content collection to query post's `md`.
-
-##### [page].astro
-
-The `[page].astro` is the route to work with the paginated post list. You can change there the number of items listed for each page and the pagination button labels.
-
-##### [slug].astro
-
-The `[slug].astro` is the base route for every blog post, you can customize the page layout or behaviour, by default uses `content/blog` for content collection and `PostLayout` as layout.
-
-#### Shop
-
-Add your `md` item in the `/pages/shop/` folder.
-
-##### [page].astro
-
-The `[page].astro` is the route to work with the paginated item list. You can change there the number of items listed for each page and the pagination button labels. The shop will render all `.md` files you include inside this folder.
-
-##### Item format
-
-Add code with this format at the top of each item file.
-
-```js
----
-title: "Demo Item 1"
-description: "Item description"
-heroImage: "Item img url"
-details: true // show or hide details btn
-custom_link_label: "Custom btn link label"
-custom_link: "Custom btn link"
-pubDate: "Sep 15 2022"
-pricing: "$15"
-oldPricing: "$25.5"
-badge: "Featured"
-checkoutUrl: "https://checkouturl.com/"
----
-```
 
 #### Static pages
 
