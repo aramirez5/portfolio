@@ -1,5 +1,5 @@
 ---
-const { title, subtitle } = Astro.props;
+const { file, title, subtitle, year } = Astro.props;
 ---
 
 <div class="flex">
@@ -8,8 +8,10 @@ const { title, subtitle } = Astro.props;
     <span class="education__line bg-primary block h-full w-[2px] translate-x-[7px]"></span>
   </div>
   <div class="experience__data bd-grid px-5">
-    <h3 class="font-semibold mb-1">{title}</h3>
-    <span class="font-light text-sm">{subtitle}</span>
+    <img class="mask mask-circle" format="png" width={50} height={50} src={file} alt="Logo" />
+    <h3 class="text-blue-700 font-semibold mb-1">{title}</h3>
+    <p class="text-sm">{subtitle}</p>
+    <span class="font-light text-sm">{year}</span>
     <p class="my-2 text-justify">
       <slot />
     </p>

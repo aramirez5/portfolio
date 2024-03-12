@@ -1,92 +1,251 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import TimeLineElement from "../components/cv/TimeLine.astro";
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TimeLineElement from '../components/cv/TimeLine.astro';
 ---
 
-<BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+<BaseLayout title='Resume' sideBarActiveItemID='cv'>
+  <div class='mb-5'>
+    <div class='text-3xl w-full font-bold'>Profile</div>
   </div>
 
-  <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div class='mb-10 text-justify'>
+    Quality Assurance (QA) Engineer with solid experience in software quality
+    assurance. My meticulous approach and commitment to excellence has enabled
+    me to ensure the delivery of high-quality software products.
   </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
+  <div class='mb-5'>
+    <div class='text-3xl w-full font-bold'>Experience</div>
   </div>
 
-  <div class="time-line-container grid gap-4 mb-10">
+  <div class='time-line-container mb-10'>
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      file='/logos/knowmad.png'
+      title='QA Engineer'
+      subtitle='knowmad mood'
+      year='Jan 2023 - Present'
+    >
+      Member of the knowmad mood QA community. Quality assurance of client
+      software projects. Test automation.
+    </TimeLineElement>
+    <TimeLineElement
+      file='/logos/vaughan.png'
+      title='QA Engineer'
+      subtitle='Vaughan Systems'
+      year='Oct 2016 - Jan 2023'
+    >
+      PHP Testing Framework Codeception (E2E tests) + Selenium Server.
+      Javascript Testing Framework Cypress - SoapUI, Postman for API tests. Bug
+      Tracking Systems: JIRA. CI/CD: Jenkinks and Bamboo. Version Control Git.
+      PHP Framework Laravel.
+    </TimeLineElement>
+    <TimeLineElement
+      file='/logos/bring.png'
+      title='QA Engineer'
+      subtitle='Bring Global'
+      year='Oct 2015 - Oct 2016'
+    >
+      Quality assurance of client web projects. Test automation.
+    </TimeLineElement>
+    <TimeLineElement
+      file='/logos/iahorro.png'
+      title='Software Developer'
+      subtitle='iAhorro'
+      year='Feb 2015 - Oct 2015'
+    >
+      Design and development of the web platform: PHP, HTML5, CSS3, Javascript.
+      Database administration: MySQL. Version control: Subversion.
+      Implementation of frameworks and APIs. Business-oriented software
+      management. Agile work methodologies: AGILE with SCRUM framework. MVC.
+    </TimeLineElement>
+    <TimeLineElement
+      file='/logos/john_deere.png'
+      title='Technical Support'
+      subtitle='John Deere'
+      year='Mar 2014 - Aug 2014'
+    >
+      Asset management and control with a Citrix-based tool. End user support.
+      Management and control of authorized software (with Excel and Citrix).
+      Development of administrative process on the use of corporate Sharepoint.
+    </TimeLineElement>
+    <TimeLineElement
+      file='/logos/inhiset.png'
+      title='Technical Support'
+      subtitle='INHISET S.A.'
+      year='Jun 2013 - Sep 2013'
+    >
+      Asset Management. Incident management and user support. Maintenance of
+      servers and equipment. PC configuration. Animation creation with Blender.
+    </TimeLineElement>
+  </div>
+
+  <div class='mb-5'>
+    <div class='text-3xl w-full font-bold'>Education</div>
+  </div>
+
+  <div class='time-line-container grid gap-4 mb-10'>
+    <TimeLineElement
+      file='/logos/uc3m.png'
+      title='University Carlos III of Madrid'
+      subtitle='Degree in Computer Engineering'
+      year='2008 - 2014'
     />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
   </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
+  <div class='mb-5'>
+    <div class='text-3xl w-full font-bold'>Licenses and certifications</div>
   </div>
 
-  <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-  </div>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
-  </div>
-
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
+  <ul class='list-disc mx-6 mb-10 grid gap-2'>
     <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+      <a> Scrum Foundation Professional Certificate (SFPC)</a>
+      <br>
+      <span class="font-light text-sm">CertiProf</span>
+      <br>
+      <span class="font-light text-sm">Expedition: Dec. 2023</span>
+      <br>
+      <span class="font-light text-sm">Credential ID: 92601831</span>
     </li>
     <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+      <a> Scrum Master</a>
+      <br>
+      <span class="font-light text-sm">CertiProf</span>
+      <br>
+      <span class="font-light text-sm">EuropeanScrum.org - Scrum and Agile with European Accreditation</span>
+      <br>
+      <span class="font-light text-sm">Expedition: Dec. 2023</span>
+      <br>
+      <span class="font-light text-sm">Credential ID: TLGDVLGQHG-QSQRXYRX-RDKKFTPPHK</span>
+    </li>
+    <li>
+      <a> AI-900: Microsoft Azure AI Fundamentals</a>
+      <br>
+      <span class="font-light text-sm">Udemy</span>
+      <br>
+      <span class="font-light text-sm">Expedition: Aug. 2023</span>
+    </li>
+    <li>
+      <a> BrowserStack Test Automation with TestNG</a>
+      <br>
+      <span class="font-light text-sm">BrowserStack</span>
+      <br>
+      <span class="font-light text-sm">Expedition: Jun. 2023</span>
+      <br>
+      <span class="font-light text-sm">Credential ID: 75856209</span>
+    </li>
+    <li>
+      <a> Microservices Contract Testing with Pact</a>
+      <br>
+      <span class="font-light text-sm">TestAutomationU</span>
+      <br>
+      <span class="font-light text-sm">Expedition: Jun. 2023</span>
+      <br>
+      <span class="font-light text-sm">Credential ID: 9b3ce928</span>
+    </li>
+    <li>
+      <a> Pruebas de Rendimiento</a>
+      <br>
+      <span class="font-light text-sm">DEXS, Digital Experience School</span>
+      <br>
+      <span class="font-light text-sm">Expedition: Jun. 2023</span>
+      <br>
+      <span class="font-light text-sm">Credential ID: 4fada49acc74ee933754b4fb4d7bfd64</span>
+    </li>
+    <li>
+      <a> EF SET English Certificate 62/100 (C1 Advanced)</a>
+      <br>
+      <span class="font-light text-sm">EF Standard English Test (EF SET)</span>
+      <br>
+      <span class="font-light text-sm">Expedition: May. 2023</span>
+    </li>
+    <li>
+      <a> GitHub Actions - The Complete Guide</a>
+      <br>
+      <span class="font-light text-sm">Udemy</span>
+      <br>
+      <span class="font-light text-sm">Expedition: May. 2023</span>
+      <br>
+      <span class="font-light text-sm">Credential ID: UC-2255af90-79f4-42fa-9d54-5ebf9719b8f5</span>
+    </li>
+    <li>
+      <a> Karate API Automation</a>
+      <br>
+      <span class="font-light text-sm">Udemy</span>
+      <br>
+      <span class="font-light text-sm">Expedition: Abr. 2023</span>
+      <br>
+      <span class="font-light text-sm">Credential ID: UC-1faeec13-37d5-480d-b567-560aab3cf341</span>
+    </li>
+    <li>
+      <a> Cypress - The Complete Course</a>
+      <br>
+      <span class="font-light text-sm">Udemy</span>
+      <br>
+      <span class="font-light text-sm">Expedition: Mar. 2023</span>
+      <br>
+      <span class="font-light text-sm">Credential ID: UC-982d077b-1f25-402f-8e46-ba6d9edf5c47</span>
     </li>
   </ul>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
+  <div class='mb-5'>
+    <div class='text-3xl w-full font-bold'>Courses</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+  <ul class='list-disc mx-6 mb-10 grid gap-2'>
+    <li>
+      <a> AWS Cloud Practitioner Essentials</a>
+    </li>
+    <li>
+      <a> Higher Course in Business in Social Networks</a>
+    </li>
+  </ul>
+
+  <div class='mb-5'>
+    <div class='text-3xl w-full font-bold'>Languages</div>
+  </div>
+
+  <ul class='list-disc mx-6 mb-10 grid gap-2'>
+    <li>
+      <a> Spanish</a>
+      <br>
+      <span class="font-light text-sm">Bilingual or native proficiency</span>
+    </li>
+    <li>
+      <a> English</a>
+      <br>
+      <span class="font-light text-sm">Basic professional competence</span>
+    </li>
+  </ul>
+
+  <div class='mb-5'>
+    <div class='text-3xl w-full font-bold'>Skills</div>
+  </div>
+
+  <ul class='list-disc md:columns-5 columns-2 mx-6'>
+    <li>PostgreSQL</li>
+    <li>MySQL</li>
+    <li>SQL Server</li>
+    <li>Github</li>
+    <li>Gitlab</li>
+    <li>Subversion</li>
+    <li>Java</li>
+    <li>PHP</li>
+    <li>Javascript</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Laravel</li>
+    <li>SonarQube</li>
+    <li>Selenium</li>
+    <li>Karate</li>
+    <li>RestAssured</li>
+    <li>Cypress</li>
+    <li>Playwright</li>
+    <li>Jira</li>
+    <li>Zephyr</li>
+    <li>XRay</li>
+    <li>Codeception</li>
+    <li>CodeceptJS</li>
+    <li>Cucumber</li>
+    <li>JMeter</li>
   </ul>
 </BaseLayout>
