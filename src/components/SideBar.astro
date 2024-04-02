@@ -50,27 +50,14 @@ const { sideBarActiveItemID } = Astro.props;
           </svg>
           <svg
             id='checkIcon'
-            width='24px'
-            height='24px'
-            viewBox='-6 -6 36.00 36.00'
-            fill='none'
             xmlns='http://www.w3.org/2000/svg'
+            width='24'
+            height='24'
+            viewBox='0 0 24 24'
             style='display:none;'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'
-            ><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g
-              id='SVGRepo_tracerCarrier'
-              stroke-linecap='round'
-              stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'>
-              <circle cx='12' cy='12' r='10' stroke='#1C274C' stroke-width='1.5'
-              ></circle>
-              <path
-                d='M8.5 12.5L10.5 14.5L15.5 9.5'
-                stroke='#1C274C'
-                stroke-width='1.5'
-                stroke-linecap='round'
-                stroke-linejoin='round'></path>
-            </g></svg
+            ><path
+              d='m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z'
+            ></path></svg
           >
         </div>
       </div>
@@ -81,28 +68,30 @@ const { sideBarActiveItemID } = Astro.props;
 </div>
 
 <script>
-  document.getElementById('clipboardIcon').addEventListener('click', function () {
-    // Selecciona el texto del correo electrónico
-    var email = document.getElementById('email');
-    var range = document.createRange();
-    range.selectNode(email);
-    window.getSelection().removeAllRanges();
-    window.getSelection().addRange(range);
+  document
+    .getElementById('clipboardIcon')
+    .addEventListener('click', function () {
+      // Selecciona el texto del correo electrónico
+      var email = document.getElementById('email');
+      var range = document.createRange();
+      range.selectNode(email);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
 
-    // Copia el texto seleccionado al portapapeles
-    document.execCommand('copy');
+      // Copia el texto seleccionado al portapapeles
+      document.execCommand('copy');
 
-    // Elimina la selección de texto
-    window.getSelection().removeAllRanges();
+      // Elimina la selección de texto
+      window.getSelection().removeAllRanges();
 
-    // Muestra el SVG temporal
-    document.getElementById('clipboardIcon').style.display = 'none';
-    document.getElementById('checkIcon').style.display = 'inline-block';
+      // Muestra el SVG temporal
+      document.getElementById('clipboardIcon').style.display = 'none';
+      document.getElementById('checkIcon').style.display = 'inline-block';
 
-    // Vuelve a mostrar el SVG original después de 2 segundos
-    setTimeout(function () {
-      document.getElementById('clipboardIcon').style.display = 'inline-block';
-      document.getElementById('checkIcon').style.display = 'none';
-    }, 2000);
-  });
+      // Vuelve a mostrar el SVG original después de 2 segundos
+      setTimeout(function () {
+        document.getElementById('clipboardIcon').style.display = 'inline-block';
+        document.getElementById('checkIcon').style.display = 'none';
+      }, 2000);
+    });
 </script>
